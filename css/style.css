@@ -1,0 +1,822 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    min-height: 70vh; /* Ensure footer is pushed down */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* Utility Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Placeholder for ad sections */
+.ad-placeholder-sidebar {
+    width: 300px;
+    height: 250px;
+    background-color: #ddd;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Youthful, Energetic, Creative Theme */
+/* Example Palette:
+   Primary: #FF6B6B (Coral)
+   Secondary: #4ECDC4 (Turquoise)
+   Accent: #FFD166 (Sunny Yellow)
+   Dark: #3A3A3A (Dark Gray for text)
+   Light: #F7F7F7 (Off-white for background)
+*/
+
+body {
+    font-family: 'Arial', sans-serif; /* Cleaner font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #F7F7F7; /* Light background */
+    color: #3A3A3A; /* Dark gray for text */
+}
+
+header {
+    background: #3A3A3A; /* Dark gray for header */
+    color: #FFF;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #FF6B6B; /* Coral accent */
+}
+
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    background-color: #FF6B6B; /* Coral on hover/active */
+    color: #FFF;
+}
+
+main {
+    padding: 0; /* Remove default padding for full-width sections */
+    min-height: 70vh;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3A3A3A; /* Dark gray for footer */
+    color: #F7F7F7;
+    margin-top: auto;
+    border-top: 5px solid #4ECDC4; /* Turquoise accent */
+}
+
+footer a {
+    color: #4ECDC4; /* Turquoise links in footer */
+}
+
+.container {
+    width: 90%; /* More responsive width */
+    max-width: 1100px; /* Max width for larger screens */
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+/* Home Page Specific Styles */
+#hero {
+    background-color: #4ECDC4; /* Turquoise background for hero */
+    color: #FFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+#hero .tagline {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #FFD166; /* Sunny Yellow for tagline */
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6B6B; /* Coral */
+    color: #FFF;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded buttons */
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    background-color: #e05252; /* Darker Coral */
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background-color: #FFD166; /* Sunny Yellow */
+    color: #3A3A3A;
+}
+
+.cta-button.secondary:hover {
+    background-color: #e6b84f; /* Darker Sunny Yellow */
+}
+
+/* Layout for content and sidebar */
+.content-sidebar-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between content and sidebar */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-content {
+    flex: 2; /* Takes up 2/3 of the space */
+    min-width: 300px; /* Ensure content doesn't get too squished */
+}
+
+.sidebar {
+    flex: 1; /* Takes up 1/3 of the space */
+    min-width: 250px; /* Ensure sidebar doesn't get too squished */
+    background-color: #fff; /* White background for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sidebar h3 {
+    color: #FF6B6B; /* Coral for sidebar headings */
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #4ECDC4; /* Turquoise for links in sidebar */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+#latest-posts h2 {
+    color: #FF6B6B; /* Coral for section titles */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.post-preview {
+    background-color: #fff; /* White background for post previews */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.post-preview h3 a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+    color: #FF6B6B; /* Coral on hover */
+}
+
+.post-preview a {
+    color: #4ECDC4; /* Turquoise for "Read More" */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-preview a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content-sidebar-container {
+        flex-direction: column;
+    }
+
+    #hero h1 {
+        font-size: 2.2em;
+    }
+
+    #hero .tagline {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Blog Page Specific Styles */
+.page-header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: #3A3A3A;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#blog-posts {
+    /* Uses .main-content styles */
+}
+
+.blog-sidebar {
+    /* Uses .sidebar styles */
+}
+
+.blog-post-item {
+    display: flex; /* For image and content side-by-side */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+    gap: 20px; /* Space between image and content */
+}
+
+.blog-post-image {
+    width: 200px; /* Fixed width for the image */
+    height: 150px;
+    object-fit: cover; /* Crop image to fit */
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.blog-post-content {
+    flex-grow: 1; /* Allow content to take remaining space */
+}
+
+.blog-post-item h3 a {
+    color: #3A3A3A;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.blog-post-item h3 a:hover {
+    color: #FF6B6B;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-meta a {
+    color: #4ECDC4;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #4ECDC4;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #3aa89f;
+}
+
+/* Blog Post Template Specific Styles */
+.blog-post-full {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.post-header-full h1 {
+    font-size: 2.5em;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+}
+
+.blog-post-feature-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-content-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between content and sidebar */
+}
+
+.post-content {
+    flex: 3; /* Main content takes more space */
+    min-width: 0; /* Allows content to shrink properly */
+}
+
+.post-content h2 {
+    color: #FF6B6B;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.post-content h3 {
+    color: #4ECDC4;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.post-content p, .post-content li {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.post-content pre {
+    background-color: #2d2d2d; /* Dark background for code blocks */
+    color: #f8f8f2; /* Light text for code blocks */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Scroll for long lines of code */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+
+.post-content code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post-content figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.post-content figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.blog-post-sidebar {
+    flex: 1; /* Sidebar takes less space */
+    min-width: 250px;
+    /* Uses .sidebar base styles, can add more specific ones here */
+}
+
+.comments-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.comments-section h2 {
+    color: #FF6B6B;
+}
+
+/* Responsive adjustments for blog */
+@media (max-width: 992px) { /* Target tablets and large phones */
+    .blog-post-item {
+        flex-direction: column; /* Stack image and content */
+    }
+    .blog-post-image {
+        width: 100%; /* Full width image */
+        height: 200px; /* Adjust height as needed */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-layout, .blog-content-area {
+        flex-direction: column;
+    }
+    .post-header-full h1 {
+        font-size: 2em;
+    }
+    .post-content h2 {
+        font-size: 1.6em;
+    }
+    .post-content h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Portfolio Page Specific Styles */
+#portfolio-items {
+    flex: 3; /* Takes more space compared to a potential sidebar */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    overflow: hidden; /* Ensure image corners are rounded if image is direct child */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-content {
+    padding: 20px;
+    flex-grow: 1; /* Allows content to fill space, pushing buttons down */
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-content h3 {
+    margin-top: 0;
+    color: #3A3A3A;
+    font-size: 1.5em;
+}
+
+.project-tags {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.project-tags span {
+    background-color: #4ECDC4; /* Turquoise */
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-size: 0.85em;
+    display: inline-block; /* Ensures proper spacing and wrapping */
+    margin-bottom: 5px; /* For wrapping */
+}
+
+.project-tags span:nth-child(2n) {
+    background-color: #FFD166; /* Sunny Yellow */
+    color: #3A3A3A;
+}
+.project-tags span:nth-child(3n) {
+    background-color: #FF6B6B; /* Coral */
+    color: #fff;
+}
+
+
+.portfolio-content p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes buttons to the bottom of the card */
+}
+
+.portfolio-content .cta-button,
+.portfolio-content .cta-button.secondary {
+    margin-top: 10px; /* Add space above buttons */
+    align-self: flex-start; /* Align buttons to the start of the flex container */
+}
+
+
+.portfolio-sidebar {
+    /* Uses .sidebar styles */
+    /* Can add specific portfolio sidebar styles if needed */
+    flex: 1;
+    min-width: 250px; /* From general sidebar style */
+}
+
+/* Ensure main content and sidebar layout for portfolio */
+/* Re-using .content-sidebar-container structure for portfolio if needed,
+   but portfolio.html currently doesn't use it. If it did, this would apply:
+.container > .content-sidebar-container { }
+*/
+
+/* If portfolio items and sidebar are direct children of .container and need flex: */
+/* This is a more specific selector if the portfolio page structure is unique */
+body > main > div.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    gap: 30px; /* Space between portfolio items and sidebar */
+}
+
+
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack portfolio items and sidebar if they are in a flex container */
+    body > main > div.container {
+        flex-direction: column;
+    }
+     #portfolio-items {
+        width: 100%; /* Ensure it takes full width when stacked */
+    }
+    .portfolio-sidebar {
+        width: 100%; /* Ensure it takes full width when stacked */
+        margin-top: 30px; /* Add space when stacked */
+    }
+}
+
+/* Contact Page Specific Styles */
+.contact-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#contact-form-section {
+    /* Uses .main-content styles */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+}
+
+#contact-form-section h2 {
+    color: #FF6B6B; /* Coral */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for width 100% */
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #4ECDC4; /* Turquoise on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 205, 196, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize, disable horizontal */
+}
+
+#contact-form button.cta-button {
+    /* Uses general .cta-button styles */
+    /* background-color: #FF6B6B; (Coral) */
+    padding: 12px 30px;
+    cursor: pointer;
+}
+#contact-form button.cta-button:hover {
+    /* background-color: #e05252; (Darker Coral) */
+}
+
+.form-note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+.contact-sidebar {
+    /* Uses .sidebar styles */
+}
+
+.contact-sidebar h3 {
+    /* Uses .sidebar h3 styles */
+    /* color: #FF6B6B; */
+    margin-bottom: 15px;
+}
+
+.contact-sidebar p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+.contact-sidebar p strong {
+    color: #3A3A3A;
+}
+.contact-sidebar a {
+    color: #4ECDC4; /* Turquoise */
+    text-decoration: none;
+}
+.contact-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links .social-icon {
+    display: inline-block;
+    padding: 8px 0px 8px 30px; /* Space for icon */
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px; /* Adjust as needed */
+}
+
+/* Basic SVG icons (URL-encoded) - Replace with actual SVGs or FontAwesome if preferred */
+/* You will need to create/find SVG icons and URL-encode them or use a library */
+.social-icon.instagram {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF6B6B'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 1.272.058 2.163.248 2.948.565.798.324 1.468.75 2.127 1.408.658.66 1.084 1.33 1.408 2.127.318.785.507 1.676.565 2.948.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.058 1.272-.248 2.163-.565 2.948-.324.798-.75 1.468-1.408 2.127-.66.658-1.33 1.084-2.127 1.408-.785.318-1.676.507-2.948.565-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.272-.058-2.163-.248-2.948-.565-.798-.324-1.468-.75-2.127-1.408-.658-.66-1.084-1.33-1.408-2.127-.318-.785-.507-1.676-.565-2.948-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.058-1.272.248-2.163.565-2.948.324-.798.75-1.468-1.408-2.127.66-.658 1.33-1.084 2.127-1.408.785-.318 1.676-.507 2.948-.565C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.147 0-3.506.01-4.73.068-1.18.053-1.914.23-2.49.45-.587.226-.99.52-1.417.946-.427.427-.72.83-.946 1.417-.22.576-.407 1.31-.45 2.49-.058 1.225-.068 1.584-.068 4.73s.01 3.506.068 4.73c.053 1.18.23 1.914.45 2.49.226.587.52.99.946 1.417.427.427.83.72 1.417.946.576.22 1.31.407 2.49.45 1.225.058 1.584.068 4.73.068s3.506-.01 4.73-.068c1.18-.053 1.914-.23 2.49-.45.587-.226.99-.52 1.417-.946.427-.427.72-.83.946-1.417.22-.576.407-1.31.45-2.49.058-1.225.068-1.584.068-4.73s-.01-3.506-.068-4.73c-.053-1.18-.23-1.914-.45-2.49-.226-.587-.52-.99-.946-1.417-.427-.427-.83-.72-1.417-.946-.576-.22-1.31-.407-2.49-.45C15.506 3.975 15.147 3.965 12 3.965zm0 3.082c-2.974 0-5.38 2.406-5.38 5.38s2.406 5.38 5.38 5.38 5.38-2.406 5.38-5.38-2.406-5.38-5.38-5.38zm0 8.76c-1.864 0-3.38-1.516-3.38-3.38s1.516-3.38 3.38-3.38 3.38 1.516 3.38 3.38-1.516 3.38-3.38 3.38zm6.406-8.252c-.78 0-1.414.634-1.414 1.414s.634 1.414 1.414 1.414 1.414-.634 1.414-1.414-.634-1.414-1.414-1.414z'/%3E%3C/svg%3E");
+}
+.social-icon.linkedin {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234ECDC4'%3E%3Cpath d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/%3E%3C/svg%3E");
+}
+.social-icon.youtube {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF0000'%3E%3Cpath d='M12.04,4.85c-4.07,0-7.37,3.3-7.37,7.37s3.3,7.37,7.37,7.37s7.37-3.3,7.37-7.37S16.11,4.85,12.04,4.85z M9.86,15.06V9.16 l5.44,2.95L9.86,15.06z M21.58,8.27c-0.23-0.84-0.89-1.5-1.73-1.73C18.46,6.23,12.04,6.23,12.04,6.23s-6.42,0-7.81,0.31 c-0.84,0.23-1.5,0.89-1.73,1.73C2.19,9.66,2.19,12,2.19,12s0,2.34,0.31,3.73c0.23,0.84,0.89,1.5,1.73,1.73 c1.39,0.31,7.81,0.31,7.81,0.31s6.42,0,7.81-0.31c0.84-0.23,1.5-0.89,1.73-1.73C21.89,14.34,21.89,12,21.89,12 S21.89,9.66,21.58,8.27z'/%3E%3C/svg%3E");
+}
+.social-icon.github {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233A3A3A'%3E%3Cpath d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'/%3E%3C/svg%3E");
+}
+
+
+.social-icon:hover {
+    color: #fff; /* Example hover effect */
+}
+.social-icon.instagram:hover { background-color: #E1306C; /* Instagram gradient-ish */ }
+.social-icon.linkedin:hover { background-color: #0077B5; /* LinkedIn Blue */ }
+.social-icon.youtube:hover { background-color: #c4302b; /* Darker YouTube Red */ }
+.social-icon.github:hover { background-color: #24292e; /* GitHub Dark Grey */ color: #fff; }
+
+
+@media (max-width: 768px) {
+    .contact-layout {
+        flex-direction: column;
+    }
+     #contact-form-section, .contact-sidebar {
+        width: 100%;
+    }
+}
+
+.ad-placeholder-footer {
+    width: 728px;
+    height: 90px;
+    background-color: #ddd;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.ad-placeholder-article {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
